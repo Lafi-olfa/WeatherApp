@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+main{
+    width: 400px;
+    height: max-content;
+    min-height: 400px;
+    background-color:rgb(206, 155, 166);
+    border-radius: 30px;
+    box-shadow: 12px 12px 2px 1px rgba(198, 198, 201, 0.2);
+    padding: 30px;
+
+}
+main form{
+    border:1px solid black;
+    display: flex;
+    justify-content: space-between;
+    border-radius:30px ;
+}
+main form input,
+main form button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+}
+main form i{
+    opacity: 0.7;
+}
+main .result{
+    padding-top: 20px;
+    text-align: center;
+
+}
+main .result .name{
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .result .name img{
+    width: 80px;
+    filter: drop-shadow(0 10px 50px rgb(212, 45, 45));
+    -webkit-filter: drop-shadow(0 10px 50px rgb(212, 45, 45));
+}
+main .temperature figcaption{
+    font-size: 3em;
+}
+main .description{
+    padding: 10px 0 10px;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+main li{
+    background: #f8702b;
+    color: bisque;
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-image: linear-gradient(to bottom,
+    transparent 50%,
+    rgba(78, 75, 75, 0.2) 50%
+    );
+}
+main li i{
+    font-size:2em;
+    display: block;
+    margin: 20px 0;
+}
+main li:nth-child(2){
+    background: #2acf54;
+}
+main li:nth-child(3){
+    background: #0d8bc5;
+}
+
+ 
